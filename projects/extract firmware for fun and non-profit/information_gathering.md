@@ -10,11 +10,11 @@ Whenever you decide to attack some IOT device, we need to gather as much informa
 
 When it comes to hardware, we need to take a look at its [`FCC ID`](https://fccid.io/KA2SL2730EV1/RF-Exposure-Info/RF-Exposure-2294482), which describes each and every aspect and specification of that particular thing. Usually found on back of your device. FYI, every wireless communication device in US must have `FCC ID`. If you are from other country, try using google dorks such as `site:fcc.io "{your device}"`. For example, `site: fcc.io D-Link-DSL-2730U`.
 
-![something](./images/2021-11-18_18-41.png)
+![google](./images/2021-11-18_18-41.png)
 
 After which, you need to crack open the router, to see if there is some sort of juicy info such as finding UART, JTAG serial port. In my case, I found UART interface.
 
-![[find_uart.jpg]]
+![find uart](./images/find_uart.jpg)
 
 Not every device looks like this, sometimes the pins are not soldered to the PCB or even though its soldered, the circuit might not be connected or more specifically its in **open loop** configuration. So, it varies according to the situation.
 
@@ -23,7 +23,7 @@ Not every device looks like this, sometimes the pins are not soldered to the PCB
 
 Sometimes, UART is disabled. For which you need to enter to bootloader inorder to enable it. Use `esc` or `delete` to enter to bootloader.
 
-![[2021-10-11_17-50.png]]
+![bootloader](./images/2021-10-11_17-50.png)
 
 FYI, always pay attention to the serial output when doing this. As it will contain a lot of juicy info. More importantly, look up words such as **partitions** and **sectors**, this will be very useful when dumping firmware.
 
