@@ -169,5 +169,3 @@ Well, the firmware uses a compression algorithm called `LZMA`, so you need to se
 ![devusbtty0](./images/2021-10-26_00-15.png)
 
 You might even ask, until which address. Well, it depends. Usually you need to stop when you see alot of null bytes but still might not be sure because there is a lot of room of null bytes which is shown below.
-
-![lzma](./images2021-12-31_22-07.png)
