@@ -14,12 +14,12 @@ After which we need to determine its `baud rate`, we can determine it using:
 * Trial and error of standard values such as `[110, 300, 600, 1200, 1800, 2400, 3600, 4300, 4800, 7200, 9600, 14400, 19200, 28800, 38400, 39400, 57600, 115200, 128000, 230400, 256000]`
 * Take a sample using `Saleae Logic` and use `baud-estimate` extension or try using the above values until you get a readable output
 
-When I determined the baud rate it was **115200**. You can interact it using `puTTY`, `minicom` and `screen`. I've used `puTTY`.
+When I determined the baud rate it was **115200**. You can interact it using `puTTY`, `minicom` and `screen`. I've used `puTTY`. <br>
 
-![putty_settings](./images/2021-10-23_15-40 1.png)
+![putty settings](./images/2021-10-23_15-40 1.png)
 
 Well, if you have reached till here. Congratulations 🎉, you will be prompted with a boot console 💻.
 
-![boot_console](./images/2021-10-20_12-03 1.png)
+![boot console](./images/2021-10-20_12-03 1.png)
 
 We have access to bootloader in our case. But sometimes if lucky, you might directly be able to interact with OS, possible in old routers. Let's see about that in the next part of this slide.
