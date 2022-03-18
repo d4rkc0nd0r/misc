@@ -1,6 +1,9 @@
-Inorder to dump firmware from bootloader, we need to somehow have access to the bootloader. Well, you can get access to the bootloader by using `esc`, `delete` or `F11`. 
+## Dumping firmware from bootloader
+**I'd this doubt whether it is possible to dump firmware without using any of those devices such as bus pirate, bus blaster and jtagulator. Well, here it is 😜.**
 
-![[2021-10-11_17-50.png]]
+Inorder to dump firmware from bootloader, we need to somehow have access to the bootloader. Well, you can get access to the bootloader by using `esc`, `delete`. 
+
+![options](./images/2021-10-11_17-50.png)
 
 Here, we are interested in `entry address: 0x80000000` and above we can see different commands and we have to use `d` to dump the firmware, you might have thought, how much should we dump? Well, you have to dump about `16M`. 
 
@@ -138,15 +141,15 @@ And the output looks something like this:
 0xBFC003D0: 10 00 FF 0B 00 00 00 00 10 00 FF 09 00 00 00 00 ................
 ```
 
-Incase you are confused about the address, its where the `spi flash` is.
+Incase you are confused about the address, its where the `SPI flash` is.
 
 Here is the video how it actually looks like. 
 
-![[2021-10-12.mp4]]
+![video](./images/)
 
 `WE ARE IN THE MATRIX`
 
-![[2021-10-23_16-05.png]]
+![](./images/2021-10-23_16-05.png)
 
 But some hex bytes will not be proper, I mean **non-printable** characters and sometimes the hex bytes do get missed out, which is shown below. In such case, you need to dump that specific address individually. `d 0xBFC00580 15`, this will remediate the issue.
 
@@ -163,9 +166,8 @@ But from which address to extract?
 
 Well, the firmware uses a compression algorithm called `LZMA`, so you need to search for its **magic bytes**, which is `5D 00 00 80`.
 
-![[2021-10-26_00-15.png]]
+![devusbtty0](./images/2021-10-26_00-15.png)
 
 You might even ask, until which address. Well, it depends. Usually you need to stop when you see alot of null bytes but still might not be sure because there is a lot of room of null bytes which is shown below.
 
-![[2021-12-31_22-07.png]]
-
+![lzma](./images2021-12-31_22-07.png)
