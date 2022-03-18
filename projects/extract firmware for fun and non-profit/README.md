@@ -6,4 +6,5 @@
 * Dumping from bootloader
 
 <h4>These are the steps I've taken before doing it:</h4>
+
 * [Information gathering](https://github.com/d4rkc0nd0r/misc/blob/main/projects/extract%20firmware%20for%20fun%20and%20non-profit/information_gathering.md)
