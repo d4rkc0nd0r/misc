@@ -8,3 +8,13 @@
 <h4>These are the steps I've taken before doing it:</h4>
 
 * [Information gathering](https://github.com/d4rkc0nd0r/misc/blob/main/projects/extract%20firmware%20for%20fun%20and%20non-profit/information_gathering.md)
+* [Interacting with UART](https://github.com/d4rkc0nd0r/misc/blob/main/projects/extract%20firmware%20for%20fun%20and%20non-profit/interacting_with_uart.md)
+* [Tried dumping firmware via TFTP](https://github.com/d4rkc0nd0r/misc/blob/main/projects/extract%20firmware%20for%20fun%20and%20non-profit/dumping_firmware_using_tftp.md), but couldn't do it
+* [Dumping firmware from bootloader](https://github.com/d4rkc0nd0r/misc/blob/main/projects/extract%20firmware%20for%20fun%20and%20non-profit/dumping_firmware_from_bootloader.md), this worked for me after hours of frustration to figure out the correct offset
+* [Dumping firmware from SPI flash](https://github.com/d4rkc0nd0r/misc/blob/main/projects/extract%20firmware%20for%20fun%20and%20non-profit/dumping_firmware_from_spi_flash.md), this method works like charm
+
+You can find the dumped firmware [here](https://github.com/d4rkc0nd0r/misc/tree/main/projects/extract%20firmware%20for%20fun%20and%20non-profit/firmware) <br>
+
+**If interested, you can emulate it on QEMU**
+* **clean_firmware.7z is the `LZMA` compressed binary**
+* **router.bin is the unpacked binary**
