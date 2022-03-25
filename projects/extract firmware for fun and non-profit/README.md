@@ -18,3 +18,6 @@ You can find the dumped firmware [here](https://github.com/d4rkc0nd0r/misc/tree/
 **If interested, you can emulate it on QEMU**
 * **clean_firmware.7z is the `LZMA` compressed binary**
 * **router.bin is the unpacked binary, result of clean_firmware.7z**
+
+**This is how extracting firmware from bootloader looks like** <br>
+![firmware_dump](https://asciinema.org/a/KXGfROoAlhwGssttdss7qkHf1?autoplay=1)
