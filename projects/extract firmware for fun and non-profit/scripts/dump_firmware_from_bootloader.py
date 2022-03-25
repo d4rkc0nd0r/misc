@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# python2 get_to_bootloader.py --read=test.bin --addr=0x80000000 --size=0x8000000 --block=0x10000 
+# python2 dump_firmware_from_bootloader.py --read=test.bin --addr=0x80000000 --size=0x8000000 --block=0x10000 
 
 from __future__ import division
 from optparse import OptionParser
