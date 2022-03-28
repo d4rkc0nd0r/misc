@@ -15,6 +15,8 @@
 
 You can find the dumped firmware [here](https://github.com/d4rkc0nd0r/misc/tree/main/projects/extract%20firmware%20for%20fun%20and%20non-profit/firmware) <br>
 
+[Here](https://github.com/d4rkc0nd0r/misc/tree/main/projects/extract%20firmware%20for%20fun%20and%20non-profit/setup_images), you can find on how I setup my project.
+
 **If interested, you can emulate it on QEMU**
 * **clean_firmware.7z is the `LZMA` compressed binary**
 * **router.bin is the unpacked binary, result of clean_firmware.7z**
