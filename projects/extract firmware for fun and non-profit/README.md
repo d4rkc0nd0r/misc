@@ -24,3 +24,7 @@ You can find the dumped firmware [here](https://github.com/d4rkc0nd0r/misc/tree/
 **This is how extracting firmware from bootloader looks like** <br>
 
 [![firmware_dump](https://asciinema.org/a/KXGfROoAlhwGssttdss7qkHf1.png)](https://asciinema.org/a/KXGfROoAlhwGssttdss7qkHf1)
+
+[Here](https://github.com/d4rkc0nd0r/misc/tree/main/projects/extract%20firmware%20for%20fun%20and%20non-profit/presentation) is my presentation for IOT Village CFP 2022.
+
+**Duration**: It took me 2-3 weeks to complete this project
