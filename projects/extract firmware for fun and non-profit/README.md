@@ -1,7 +1,7 @@
 # Extract firmware for fun and non-profit
-**This is the talk I'll giving at IOT Village CFP 2022.** <br>
+**This talk is given at IOT Village CFP 2022.** <br>
 **This talk aims at dumping firmware from embedded device such as router in 3 ways:**
-* Dumping using SPI Flash, we all know that
+* Dumping using SPI Flash, we are familiar with that
 * Using TFTP, a UDP protocol, which is used to upload firmware
 * Dumping from bootloader
 
